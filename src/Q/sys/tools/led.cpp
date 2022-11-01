@@ -50,7 +50,12 @@ void _LED_sw(
                 ,bool _state
             ){
   //
-  uint8_t _sw=_state ? HIGH:LOW;
+  uint8_t _sw=0;
+  #ifdef ESP8266_AV
+  _sw=_state ? LOW:HIGH;
+  #elif AVR_AV
+  _sw=_state ? HIGH:LOW;
+  #endif
   digitalWrite( LED_BUILTIN, _sw);
   //
 }

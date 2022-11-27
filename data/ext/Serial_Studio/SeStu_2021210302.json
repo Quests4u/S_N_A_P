@@ -1,0 +1,28 @@
+{
+    "t":"%1",
+     "g":[
+        {
+           "t":"Sensor Readings",
+           "d":[
+              {
+                 "t":"Temperature",
+                 "v":"%2",
+                 "g":true,
+                 "u":"°C"
+              },
+              {
+                 "t":"Pressure",
+                 "v":"%3",
+                 "u":"KPa",
+                 "g":true
+              },
+              {
+                 "t":"(rel.)Humidity",
+                 "v":"%4",
+                 "g":true,
+                 "u":"%"
+              }
+           ]
+        }
+     ]
+}

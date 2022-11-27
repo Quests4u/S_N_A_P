@@ -1,0 +1,98 @@
+Grundsätzlich ist das Gerät schon richtig
+konfiguriert und einsatzbereit.
+
+Trotzdem wirst du das Digital zu SPS 0[2]-10V Interface
+einstellen wollen; 
+Die Befehle zum Einstellen sind;
+
+Tpcm[=[min,max]]@
+Ppcm[=[min,max]]@
+Hpcm[=[min,max]]@
+EPsave@
+
+Was brauchst du um diese einzustellen; Eine App zur Kommunikation 
+mit dem Gerät, mit Ein- und Ausgabe. Apps dazu;(einen Monitor).
+
+Win7+:
+TeraTerm zB.
+https://www.heise.de/download/product/tera-term-51776/download
+(ps: Control > Command Broadcast >Change2This{ [*]Send to this.. [ ]RealTime mode })
+
+Andriot:
+USB Serial Console
+https://play.google.com/store/apps/details?id=jp.sugnakys.usbserialconsole&hl=en&gl=US
+(PS: Plug Device and after that start App and than connect.)
+
+
+Hast du das Gerät eingesteckt und der Monitor ist verbunden,
+dann sollte eine konstante Datenausgabe sichtbar sein.
+zB.
+@/T,/P,/H,25.00,990.00,74.00
+o.
+/*SNAP~EdIO,25.00,990.00,74.00*/   
+^-- GUI Format Ausgabe 
+ @Siehe https://github.com/Serial-Studio/Serial-Studio
+ @anbei die dazu notwendige JSON config.
+
+
+Wenn der Monitor konstant anzeigt, dann versuche als erstes
+das hilfecommand.
+(Bitte jedes commando immer mit '@' abschliessen)
+
+
+help@ - es sollte am monitor eine liste der möglichen commandos
+	aufscheinen.
+
+
+nun zu den SPS[PWM] commandos
+Tpcm@ 
+Ppcm@
+Hpcm@
+    ^-------- ohne alles gibt die jeweiligen
+              eingestellen Werte aus. 	 
+
+
+Tpcm[=[min,max]]@
+       ^   ^  
+       |   ´- 100[°C]    Tm ~> Vm  = 10.0V 	
+       ´----- 20[°C]     T0 ~> V0  = 0[2]V
+	      T=({value}-V0)/(Vm-V0) x (Tm-T0) + V0
+
+Ppcm[=[min,max]]@
+       ^   ^  
+       |   ´- 1100[mBar] Pm ~> Vm  = 10.0V 	
+       ´-----  900[mBar] P0 ~> V0  = 0[2]V
+	      P=({value}-V0)/(Vm-V0) x (Pm-P0) + P0
+
+Hpcm[=[min,max]]@
+       ^   ^  
+       |   ´- 100[%] Hm ~> Vm  = 10.0V 	
+       ´-----   0[%] H0 ~> V0  = 0[2]V
+	      T=({value}-V0)/(Vm-V0) x (Hm-H0) + H0
+
+(Bei jeder Übergabe sollte auch eine Ausgabe mindestens
+am LCD erfolgen!)
+
+Nun, wenn du die richtigen Ausgabebereiche, für dich
+gefunden und erfolgreich an das Gerät übergeben hast.
+Muss jetzt nur noch das absichern der Configuration 
+in die "Festplatte"[EEProm] erfolgen. Das commando dazu;
+
+EPsave@
+
+
+
+Damit solltest du das Gerät für die SPS configurieren
+und die Messwerte wieder zurückrechnen, können.
+
+
+Addon/Update:
+Wegen der SPS[Pwm] config ob 0[2]V  Nullwert, denke ich
+ist std.  0V  eingestellt;  
+Anbei ist ein .pdf mit der Grundskizze der Platinienbelegung.
+Diese Einstellung ist def. dort zu switchen.
+Ich hab einen zweite Aufbau um eine actualisierte Firmeware
+testen zu können, mit ewaigen additonalen Feature falls not.
+
+lg chris
+

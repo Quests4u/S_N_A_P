@@ -1,5 +1,6 @@
 # S_N_A_P
 <pre>
+[Synaptic Neuronal Association Processor]
 <b><big>
 IDE    :   VS Studio Code 
 Modul  :   PlattformIO

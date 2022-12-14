@@ -6,7 +6,7 @@ IDE    :   VS Studio Code
 Modul  :   PlattformIO
 Devices:   <a target=dev href='https://store.arduino.cc/products/arduino-nano'>Arduino [Nano]</a>
            Mini D1 [ESP8266]
-           *RESP Piko
+           RESP Piko [WOT: passable just with EARL* image!!]
 AVRs   :   <a target=avr href='https://www.microchip.com/en-us/product/ATmega328P'>ATmega328P</a>
            ESP8266
            RESP

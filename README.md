@@ -22,10 +22,13 @@ Arduino sorta BIOS to handle Sensor-data (here BMP280 / BME 280[180] )
                                     EProm[intern] EEProm[extern twi/i2c]
                    to handle PWM/PINS/Analoge 
                    to handle small APIs[0,1,2,3] with a set of methodes
-                            .prepared(ix)   (setup/per loop)
-                            .refresh(ix)    (refresh hardware if needed)
-                            .task(ix)       (one per 1sek; for regular data output) 
-                            .loop(ix)       (each "delay" [<<60mS])
+                        [within "setup"]
+                            .initialize(ix)            (on each chip reset, after std. setup)
+                        [within "loop"]
+                            .prepare(ix)               (prepare[set]/per loop)
+                            .refresh(ix)               (refresh hardware if needed)
+                            .task(ix)                  (one per 1sek; for regular data output) 
+                            .loop(ix)                  (each "delay" [<<60mS])
                             
                       
                                     

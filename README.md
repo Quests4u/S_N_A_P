@@ -6,10 +6,10 @@ IDE    :   VS Studio Code
 Modul  :   PlattformIO
 Devices:   <a target=dev href='https://store.arduino.cc/products/arduino-nano'>Arduino [Nano]</a>
            Mini D1 [ESP8266]
-           RESP Piko [WOT: passable just with EARL* image!!]
+           RASP [PI2] Piko [WOT: passable just with EARL* image!!]
 AVRs   :   <a target=avr href='https://www.microchip.com/en-us/product/ATmega328P'>ATmega328P</a>
            ESP8266
-           RESP
+           RP2040
 Name   :   SNAP[_AT/_ESP/_RB]
 </b></big>
 

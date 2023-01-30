@@ -38,14 +38,14 @@ Arduino sorta BIOS to handle Sensor-data (here BMP280 / BME 280[180] )
 
 2. Connex
   a.)  USB(serial)        [put] regular measured and csv formatted data
-  b.)   -"-               [get],[parse] command to configure inner parameter  ("debug=[on,off]; Tpwm=[min,max]; EPsave;.. aso")
+  b.)   -"-               [get],[parse] command to configure inner parameter  ("debug=[on,off]; Tpwm=[min,max]; OSsave;.. aso")
 
 3. Settings
   a.)  USB-commands       soft settable 
   b.)  Jumper             onboard hard(overrule) setupable
  
 4. Memory(Flash/E[EE]prom
-  a.)  OS                 save,load,[std]  on initialisation/via USB-commands  
+  a.)  OS                 OSsave,OSload,[OSstd]  on initialisation/via USB-commands  
                         
 </pre>  
 

@@ -9,6 +9,7 @@ Devices:   <a target=dev href='https://store.arduino.cc/products/arduino-nano'>A
            RASP [PI2] Piko [WOT: possible, just  with <a target=dev href='https://github.com/earlephilhower/arduino-pico'>earlephilhower {@github)</a> image!!]
 AVRs   :   <a target=avr href='https://www.microchip.com/en-us/product/ATmega328P'>ATmega328P</a>
            ESP8266
+           §[UC]ESP32
            RP2040
 Name   :   SNAP[_AT/_E82/_RB]
 </b></big>
@@ -39,6 +40,10 @@ Arduino sorta BIOS to handle Sensor-data (here BMP280 / BME 280[180] )
 2. Connex
   a.)  USB(serial)        [put] regular measured and csv formatted data
   b.)   -"-               [get],[parse] command to configure inner parameter  ("debug=[on,off]; Tpwm=[min,max]; OSsave;.. aso")
+  c.)  SPI                primary used with TFT screen(§[US]touch-handles); (hotplugable built)
+  d.)  I2C[TWI]           primary used with all sensoric mesurments; (hotplugable built and adress finder)
+  e.)  §LoRa              [§UC] ->over RxTx far remotable/dataxchange able
+  f.)  §WLan              [§UC] ->[Rasp W/ESP32/ESP8266] 
 
 3. Settings
   a.)  USB-commands       soft settable 

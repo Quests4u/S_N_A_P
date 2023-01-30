@@ -23,7 +23,7 @@ Arduino sorta BIOS to handle Sensor-data (here BMP280 / BME 280[180] )
                    to handle PWM/PINS/Analoge 
                    to handle small APIs[0,1,2,3] with a set of methodes
                         [within "setup"]
-                            .initialize(ix)            (on each chip reset, after std. setup)
+                            .setup(ix)                 (on each chip reset, after std. setup)
                         [within "loop"]
                             .prepare(ix)               (prepare[set]/per loop)
                             .refresh(ix)               (refresh hardware if needed)
@@ -33,7 +33,8 @@ Arduino sorta BIOS to handle Sensor-data (here BMP280 / BME 280[180] )
                       
                                     
 1. Sensor  
-  a.)  PWM(parallel)      <put> constant analog sensor-stream -> through external 3xConverter  for SPS-conform 0-10V(2-10V) signals
+  a.)  PWM(parallel)      [put] constant analog sensor-stream -> through external 3xConverter  for SPS-conform 0-10V(2-10V) signals
+  b.)  ADC(Analog)        Analog/Digital + (Hard/Soft) Trigger[+-Hysterese+Timing]
 
 2. Connex
   a.)  USB(serial)        [put] regular measured and csv formatted data

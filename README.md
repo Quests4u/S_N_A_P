@@ -10,7 +10,7 @@ Devices:   <a target=dev href='https://store.arduino.cc/products/arduino-nano'>A
 AVRs   :   <a target=avr href='https://www.microchip.com/en-us/product/ATmega328P'>ATmega328P</a>
            ESP8266
            RP2040
-Name   :   SNAP[_AT/_ESP/_RB]
+Name   :   SNAP[_AT/_E82/_RB]
 </b></big>
 
 Arduino sorta BIOS to handle Sensor-data (here BMP280 / BME 280[180] )

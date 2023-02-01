@@ -5,7 +5,7 @@
    "tools":[
       "needed[download]":[
          "git": {
-            "url":   "https://git-scm.com/download/win",
+            "url":  "https://git-scm.com/download/win",
             "info":[
                "needed inside platformIO to download packages",
                "must be installed",

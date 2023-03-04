@@ -1,11 +1,12 @@
 <pre>
 [Synaptic Neuronal Association Processor]
 <b><big>
+LANG   :   C
 IDE    :   VS Studio Code 
 Modul  :   PlattformIO
 Devices:   <a target=dev href='https://store.arduino.cc/products/arduino-nano'>Arduino [Nano]</a>
            Mini D1 [ESP8266]
-           RASP [PI2] Piko [WOT: possible, just  with <a target=dev href='https://github.com/earlephilhower/arduino-pico'>earlephilhower {@github)</a> image!!]
+           RASP [PI2] Piko [WOT: possible, just  with <a target=dev href='https://github.com/earlephilhower/arduino-pico'>earlephilhower (@github)</a> image!!]
 AVRs   :   <a target=avr href='https://www.microchip.com/en-us/product/ATmega328P'>ATmega328P</a>
            ESP8266
            §[UC]ESP32

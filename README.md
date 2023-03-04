@@ -4,18 +4,22 @@
 LANG   :   C
 IDE    :   /scp [VS Studio Code]
 Modul  :   PlattformIO
-Devices:   RASP [PI2] Piko [WOT: possible, just  with <a target=dev href='https://github.com/earlephilhower/arduino-pico'>earlephilhower (@github)</a> image!!]
+Devices:   <a target=dev href='https://www.raspberrypi.com/products/raspberry-pi-pico/'>RASP [PI2] Piko</a>
+             WOT: possible, just with 
+               a.) (<a target=dev href='https://github.com/earlephilhower/arduino-pico'>earlephilhower</a>) <a target=dev href='https://github.com/maxgerhardt/platform-raspberrypi.git'>maxgerhardt</a> (@github) images.
+               b.) <a target=dev href='https://git-scm.com/download/'>git-scm </a> (git-package loader).
+               c.) <a target=conn href='https://zadig.akeo.ie'>Zadig</a> (virtiual com driver) is also needed in Win7x.
 AVRs   :   RP2040
 Name   :   SNAP_RB
 </b></big>
 
-
-Special Setup needed to use RaspPI on Arduino [VS-Code]
-
+<p>
+<h2><b><i>Special Setup needed to use RaspPI on Arduino [VS-Code]</i></b></h2>
 Please follow those Instructions: <a target=info href='./rasp-platformIO-setup.lsp'>rasp-platformIO-setup.lsp</a>
-(or below)
+</p>
 
-#//json
+<p>
+#//json 'rasp-platformIO-setup.lsp'
 {
    "dev" :  "Raspberry PI Pico [W]"
    "url" :  "https://arduino-pico.readthedocs.io/en/latest/platformio.html"
@@ -113,6 +117,7 @@ board_build.filesystem_size = 512k
   
  }
  #//eof
+</p>	
 
 
 

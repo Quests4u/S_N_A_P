@@ -2,7 +2,7 @@
 [Synaptic Neuronal Association Processor]
 <b><big>
 LANG   :   C
-IDE    :   VS Studio Code 
+IDE    :   /scp [VS Studio Code]
 Modul  :   PlattformIO
 Devices:   <a target=dev href='https://store.arduino.cc/products/arduino-nano'>Arduino [Nano]</a>
            Mini D1 [ESP8266]

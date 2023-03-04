@@ -5,8 +5,12 @@ LANG   :   C
 IDE    :   /scp [VS Studio Code]
 Modul  :   PlattformIO
 Devices:   <a target=dev href='https://store.arduino.cc/products/arduino-nano'>Arduino [Nano]</a>
-           Mini D1 [ESP8266]
-           RASP [PI2] Piko [WOT: possible, just  with <a target=dev href='https://github.com/earlephilhower/arduino-pico'>earlephilhower (@github)</a> image!!]
+           <a target=dev href='https://www.az-delivery.de/en/products/d1-mini'>Mini D1 [ESP8266]</a>
+           <a target=dev href='https://www.raspberrypi.com/products/raspberry-pi-pico/'>RASP [PI2] Piko</a>
+             WOT: possible, just with 
+               a.) (<a target=dev href='https://github.com/earlephilhower/arduino-pico'>earlephilhower</a>) <a target=dev href='https://github.com/maxgerhardt/platform-raspberrypi.git'>maxgerhardt</a> (@github) images.
+               b.) <a target=dev href='https://git-scm.com/download/'>git-scm </a> (git-package loader).
+               c.) <a target=conn href='https://zadig.akeo.ie'>Zadig</a> (virtiual com driver) is also needed in Win7x.
 AVRs   :   <a target=avr href='https://www.microchip.com/en-us/product/ATmega328P'>ATmega328P</a>
            ESP8266
            §[UC]ESP32

@@ -25,16 +25,17 @@ Arduino sorta BIOS to handle Sensor-data (here BMP280 / BME 280[180] )
                    to handle serial-i/o  
                                     o    (see "Serial  Studio")/usb formated out sensordata
                                     i    commands and settings
+                                    i    §touchscreen in combine with TFT
                    to handle storage-i/o
                                     EProm[intern] EEProm[extern twi/i2c]
                    to handle PWM/PINS/Analoge 
                    to handle small APIs[0,1,2,3] with a set of methodes
                         [within "setup"]
-                            .setup(ix)                 (on each chip reset, after std. setup)
+                            .setup(ix)                 (anytime)             ..on each chip reset, after std. setup
                         [within "loop"]
                             .prepare(ix)               (per loop)            ..prepare[set]
                             .refresh(ix)               (per loop/task)       ..(auto)refresh hardware if needed
-                            .task(ix)                  (per 6-x loops)       ..regular data output/slow ops
+                            .task(ix)                  (per 6-more loops)    ..regular data output/slow ops
                             .loop(ix)                  (the loop)            ..each delay[<<60mS] or §SleepMode
 
 

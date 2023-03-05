@@ -32,10 +32,10 @@ Arduino sorta BIOS to handle Sensor-data (here BMP280 / BME 280[180] )
                         [within "setup"]
                             .setup(ix)                 (on each chip reset, after std. setup)
                         [within "loop"]
-                            .prepare(ix)               (prepare[set]/per loop)
-                            .refresh(ix)               (refresh hardware if needed)
-                            .task(ix)                  (one per 1sek; for regular data output) 
-                            .loop(ix)                  (each "delay" [<<60mS])
+                            .prepare(ix)               (per loop)            ..prepare[set]
+                            .refresh(ix)               (per loop/task)       ..(auto)refresh hardware if needed
+                            .task(ix)                  (per 6-x loops)       ..regular data output/slow ops
+                            .loop(ix)                  (the loop)            ..each delay[<<60mS] or §SleepMode
 
 
 

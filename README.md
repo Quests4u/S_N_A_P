@@ -11,8 +11,14 @@ Devices:   <a target=dev href='https://www.raspberrypi.com/products/raspberry-pi
                c.) <a target=conn href='https://zadig.akeo.ie'>Zadig</a> (virtiual com driver) is also needed in Win7x.
 AVRs   :   RP2040
 Name   :   SNAP_RB
-</b></big>
-
+</b>
+   <u>Prepare:</u>
+        source               |   destination     |  unit         |   explaination
+        ---------------------------------------------------------------------------------------------------------   
+        _config-RaspPI.h     |  /src/config.h    |   [C]         |  xchange for   file with choosen device-setup
+        platformio.ini       |  /platformio.ini  |   [VScode]    |  modul-ini for setup needed [arduino-libraries]
+   
+</big>
 <p>
 <h2><b><i>Special Setup needed to use RaspPI on Arduino [VS-Code]</i></b></h2>
 Please follow those Instructions: <a target=info href='./rasp-platformIO-setup.lsp'>rasp-platformIO-setup.lsp</a>

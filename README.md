@@ -12,7 +12,7 @@ Name   :   SNAP_AT
    <u>Prepare:</u>
         source               |   destination     |  unit         |   explaination
         ---------------------------------------------------------------------------------------------------------   
-        _config-AT328        |  /src/config.h    |   [C]         |  xchange for   file with choosen device-setup
+        _config-AT328.h      |  /src/config.h    |   [C]         |  xchange for   file with choosen device-setup
         platformio.ini       |  /platformio.ini  |   [VScode]    |  modul-ini for setup needed [arduino-libraries]
    
 </big>
